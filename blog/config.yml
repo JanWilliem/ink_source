@@ -1,0 +1,32 @@
+site:
+    title: 刮刀
+    subtitle: Keep Calm and Carry On
+    logo: -/images/avatar.jpg
+    limit: 10
+    theme: theme
+    disqus: JanWillem
+    lang: en
+    url: http://www.inkpaper.io/blog/
+
+    # root: /blog
+
+authors:
+    me:
+        name: 刮刀
+        intro: Keep Calm and Carry On
+        avatar: -/images/avatar.jpg
+
+build:
+    port: 8000
+    copy:
+        # Copied files to public folder when build
+        - theme/css
+        - theme/js
+        - theme/favicon.ico
+        - theme/robots.txt
+        - source/images
+    publish: |
+        # Excuted command when use 'ink publish'
+        git add . -A
+        git commit -m "update"
+        git push origin
