@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom">
   <title>刮刀</title>
   <id>http://www.inkpaper.io/blog/</id>
-  <updated>2015-08-21T01:47:48+08:00</updated>
+  <updated>2015-08-22T16:38:59+08:00</updated>
   <subtitle>Keep Calm and Carry On</subtitle>
   <link href="http://www.inkpaper.io/blog/"></link>
   <author>
     <name>刮刀</name>
   </author>
+  <entry>
+    <title>如何在Mac中把Eclipse项目上传到github</title>
+    <updated>2015-08-22T10:00:00+08:00</updated>
+    <id>tag:,2015-08-22:/www.inkpaper.io/blog/post/2015/08/22/how-to-upload-eclipse-github.html</id>
+    <content type="html">本文记录了如何在Mac中把Eclipse项目上传到github</content>
+    <link href="http:/www.inkpaper.io/blog/post/2015/08/22/how-to-upload-eclipse-github.html"></link>
+    <author>
+      <name>刮刀</name>
+    </author>
+  </entry>
   <entry>
     <title>An Elegant Static Blog Generator —— InkPaper</title>
     <updated>2015-07-04T10:00:00+08:00</updated>

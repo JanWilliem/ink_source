@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=1">
+        <meta name="keywords" content="Design,Writing,">
+        <meta name="description" content="如何在Mac中把Eclipse项目上传到github">
+        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" href="/css/github.css">
+        <title>如何在Mac中把Eclipse项目上传到github</title>
+    </head>
+    <body>
+        <article class="container">
+            <a class="index" href="/">刮刀</a>
+<ul class="menu">
+    <li class="menu-item"><a href="/archive.html">ARCHIVE</a></li>
+    <li class="menu-item"><a href="/tag.html">TAG</a></li>
+    <li class="menu-item"><a href="/atom.xml">RSS</a></li>
+</ul>
+
+            <article class="main article">
+                <h1 class="title">如何在Mac中把Eclipse项目上传到github</h1>
+                <section class="info">
+                    <span class="avatar" style="background-image: url(/images/avatar.jpg);"></span>
+                    <a class="name" href="/about.me.html">刮刀</a>
+                    <span class="date" data-time="1440237600">
+                        <span class="from"></span>
+                        <span class="date" data-time="1440208800">(<span class="from"></span> updated)</span>
+                    </span>
+                    <span class="tags"><a class="tag" href="/tag/Design/index.html">Design</a><a class="tag" href="/tag/Writing/index.html">Writing</a></span>
+                </section>
+                <article class="content"><h2>如何在Mac中把Eclipse中Java项目上传到github</h2>
+
+<p><img src="/images/loader.gif" data-src="/images/githome.png" alt="如何在Mac中把Eclipse中Java项目上传到github
+" /></p>
+
+<ol>
+<li><p>在<a href="https://github.com">https://github.com</a>   new repository</p></li>
+
+<li><p>在eclipse中new project  比如:Test项目</p></li>
+
+<li><p>右击&rdquo;Test&rdquo;-&gt;Team-&gt;share project&hellip;  -&gt;select a repository type：Git
+勾选  Use or create repository in parent folder of project</p></li>
+
+<li><p>点击  Create Repository  -&gt;  Finish
+这时候打开在workspace中的Test目录会发现多了一个.git文件夹。</p></li>
+
+<li><p>再右击&rdquo;Test&rdquo;-&gt;Team-&gt;Remote-&gt;Push</p></li>
+</ol>
+
+<p>URI就是github上面指定的地址:
+<img src="/images/loader.gif" data-src="http://static.oschina.net/uploads/space/2014/0723/151532_60HW_159239.jpg" alt="image" /></p>
+
+<p>username和password就是github网站的用户名和密码</p>
+
+<p>source ref 选择 refs/heads/master  destination ref会自动填充，点击  Add Spec勾选Focus update
+开始提交。</p>
+
+<ol>
+<li>可以刷新网页查看提交的代码了。。。</li>
+</ol>
+
+<p>注:在Eclipse中生public key, 并添加到GitHub Repository中。</p>
+
+<pre><code> 在菜单栏依次打开window → preference → general → network connection → SSH2 → Key Management → generate RSA Key... → apply → save private key...
+
+生成 SSH 的 public key在GitHub中通过：edit your profile -&gt; ssh key -&gt; Add SSH Key 添加SSH Key, 
+</code></pre>
+</article>
+                <section class="author">
+                    <div class="avatar" style="background-image: url(/images/avatar.jpg);"></div>
+                    <a class="name" href="/about.me.html">刮刀</a>
+                    <div class="intro">Keep Calm and Carry On</div>
+                </section>
+                <section class="recommend">
+                    
+                    
+                    <section class="nav next">
+                        <div class="head">Next Reading</div>
+                        <a class="link" href="/post/2015/03/01/ink-blog-tool-en.html">An Elegant Static Blog Generator —— InkPaper</a>
+                    </section>
+                    
+                </section>
+                <section id="disqus_thread"></section>
+            </article>
+        </article>
+        <footer class="footer">
+    <span class="copyright">
+        刮刀 ©
+        <script type="text/javascript">
+            document.write(new Date().getFullYear());
+        </script>
+    </span>
+    <span class="publish">Powered by <a href="http://www.inkpaper.io/" target="_blank">Ink</a></span>
+</footer>
+
+        <script src="/js/jquery-1.11.2.min.js"></script>
+        <script src="/js/highlight.pack.js"></script>
+        <script src="/js/jquery.unveil.js"></script>
+        <script src="/js/index.js"></script>
+        <script type="text/javascript">
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//JanWillem.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+    </body>
+</html>
